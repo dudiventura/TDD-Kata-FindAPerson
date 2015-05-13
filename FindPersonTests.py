@@ -20,5 +20,9 @@ class FindPersonTests(unittest.TestCase):
 		location_exist = self.crowdmap.is_location_for_name("Or")
 		self.assertTrue(location_exist)
 		
+	def test_isMapConsistence(self):
+		consistence = self.crowdmap.is_map_consistence("Or")
+		self.assertTrue(consistence)
+		
 if __name__ == '__main__':
 	unittest.main()
